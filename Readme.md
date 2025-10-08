@@ -1,20 +1,30 @@
-Agent-Cortex: 一个从零徒手构建的AI多层记忆大脑 🧠
-![alt text](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Agent-Cortex: 一个从零徒手构建的AI多层记忆大脑 🧠
 
-![alt text](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-orange.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME)
 
-![alt text](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-orange.svg)
-这不是又一个大而全的Agent框架。这是一个“教学车间”。
-在充斥着LangChain和LlamaIndex等高度封装框架的时代，我们常常知其然，而不知其所以然。本项目旨在回答一个最根本的问题：
-“如果完全不依赖任何高级框架，我们如何从零开始，亲手构建一个拥有多层记忆、能够进行智能决策的AI核心？”
-✨ 项目亮点
-🧠 拆解黑箱: 我们将“Agent记忆”这个复杂的概念，拆解成了最基础、最核心的模块（事实记忆、情景记忆、智能决策流水线），并用最简洁的纯Python代码，逐一实现。
-🗺️ 展示思考过程: 本项目的精髓，不仅在于代码，更在于配套的 万字深度剖析长文（维护中）。文章详细记录了我们从一个模糊的想法，到最终实现过程中的每一次思考、迭代与重构。
-🚀 一个完美的学习起点: 如果你想真正理解RAG、混合记忆、智能路由这些概念的底层工作原理，而不是仅仅停留在调用API，那么本项目将为你提供一个最清晰、最容易上手的“发动机教学模型”。
-🏛️ 系统架构：一个三层决策的智能大脑
+> **这不是又一个大而全的Agent框架。这是一个“教学车间”。**
+
+在充斥着`LangChain`和`LlamaIndex`等高度封装框架的时代，我们常常知其然，而不知其所以然。本项目旨在回答一个最根本的问题：
+
+**“如果完全不依赖任何高级框架，我们如何从零开始，亲手构建一个拥有多层记忆、能够进行智能决策的AI核心？”**
+
+---
+
+### ✨ 项目亮点
+
+*   **🧠 拆解黑箱**: 我们将“Agent记忆”这个复杂的概念，拆解成了最基础、最核心的模块（事实记忆、情景记忆、智能决策流水线），并用最简洁的纯Python代码，逐一实现。
+*   **🗺️ 展示思考过程**: 本项目的精髓，不仅在于代码，更在于配套的 **[万字深度剖析长文（维护中）](维护中)**。文章详细记录了我们从一个模糊的想法，到最终实现过程中的每一次思考、迭代与重构。
+*   **🚀 一个完美的学习起点**: 如果你想真正理解RAG、混合记忆、智能路由这些概念的底层工作原理，而不是仅仅停留在调用API，那么本项目将为你提供一个最清晰、最容易上手的“发动机教学模型”。
+
+---
+
+### 🏛️ 系统架构：一个三层决策的智能大脑
+
 我们的Agent，通过一个“大脑前额叶”般的智能决策中心，来协同调度其“事实记忆”和“情景记忆”。
-code
-Code
+
+```
 +----------------------------------------------------------------------+
 |                           用户提问 (ask:)                            |
 +----------------------------------------------------------------------+
@@ -55,27 +65,41 @@ V                        V                                             V
 +----------------------------------------------------------------------+
 |                           Agent最终回答                              |
 +----------------------------------------------------------------------+
-🚀 快速上手
-克隆仓库
-code
-Bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-安装依赖
-code
-Bash
-pip install -r requirements.txt
-配置API密钥
-将你的大模型API密钥和Base URL，填入main.py（或其他配置文件）中。
-我们使用了BAAI/bge-small-zh-v1.5作为Embedding模型，首次运行会自动从Hugging Face下载。请确保网络连接通畅。
-启动你的AI！
-code
-Bash
-python main.py
-现在，你可以在命令行中，通过learn:和ask:指令，与你的AI进行对话了！
-🌟 我们的哲学与未来的路
+```
+
+---
+
+### 🚀 快速上手
+
+1.  **克隆仓库**
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+    cd YOUR_REPO_NAME
+    ```
+
+2.  **安装依赖**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **配置API密钥**
+    *   将你的大模型API密钥和Base URL，填入`main.py`（或其他配置文件）中。
+    *   我们使用了`BAAI/bge-small-zh-v1.5`作为Embedding模型，首次运行会自动从Hugging Face下载。请确保网络连接通畅。
+
+4.  **启动你的AI！**
+    ```bash
+    python main.py
+    ```
+    现在，你可以在命令行中，通过`learn:`和`ask:`指令，与你的AI进行对话了！
+
+---
+
+### 🌟 我们的哲学与未来的路
+
 我们相信，真正的创造，源于对第一性原理的深刻理解。
+
 这个项目目前还很简单，未来的路还很长（比如记忆持久化、更复杂的RAG策略等）。如果你也认同我们的哲学，欢迎：
-为这个项目点亮一颗 Star 🌟！
-提交 Issues，分享你的想法和建议。
-Fork 本项目，创造一个属于你自己的、更强大的记忆大脑！
+
+*   为这个项目点亮一颗 **Star** 🌟！
+*   提交 **Issues**，分享你的想法和建议。
+*   **Fork** 本项目，创造一个属于你自己的、更强大的记忆大脑！
