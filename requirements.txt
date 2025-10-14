@@ -1,0 +1,12 @@
+openai>=1.40.0
+sentence-transformers>=3.0.1
+transformers>=4.44.0
+huggingface-hub>=0.24.0
+torch>=2.3.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Notebook usage (optional but recommended for main.ipynb)
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
